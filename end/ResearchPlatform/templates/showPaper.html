@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paper Show</title>
+</head>
+<body>
+{% for item in target %}
+    {
+        'Paper_id':{{ item['Paper_id'] }},
+        'Author':{{ item['Author'] }},
+        'Paper_head':{{ item['Paper_head'] }},
+        'Paper_sum':{{ item['Paper_sum'] }},
+        'Paper_keywd':{{ item['Paper_keywd'] }},
+        'PaperTag':{{ item['PaperTag'] }},
+        'Paper_time':{{ item['Paper_time'] }}
+
+     }
+{% end %}
+</body>
+</html>
